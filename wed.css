@@ -1,0 +1,235 @@
+body{
+  margin:0;
+}
+
+body::before{
+  content:"";
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+
+  background:url("wedding3.jpg") center/cover no-repeat;
+  z-index:-1;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+#invi{
+      font-weight: 100;
+    font-family: Noto Serif Armenian;
+    margin-top:70px;
+    font-size: clamp(20px, 4.5vw, 70px);
+}
+
+#text{
+    font-weight: 100;
+    font-family: Noto Serif Armenian;
+font-size: clamp(18px, 4vw, 60px);
+margin-bottom: 50px;
+}
+
+
+.names{
+margin-top: 15px;
+margin-bottom: 0;
+}
+
+.date{
+    margin-top: 0;
+}
+
+.main{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position:relative;
+    width:100%;
+    font-family:Tangerine;
+    font-size: clamp(32px, 5vw, 80px);
+    color: white;
+  
+    
+}
+
+.calendar-section{
+    min-height:100vh;
+     width: 100%;
+
+
+    background:url(images/bg.jpg) center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.calendar-circle{
+
+ box-sizing: border-box;
+    padding: 40px;
+
+    width:700px;
+    height:700px;
+    border-radius:50%;
+
+    backdrop-filter:blur(25px);
+
+    background:rgba(255,255,255,.08);
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    overflow: hidden;
+    color:white;
+}
+
+.calendar-grid{
+    display:grid;
+    grid-template-columns:repeat(7,1fr);
+    gap:20px;
+
+    width:85%;
+    gap:6px;
+
+    margin-top:0px;
+
+    text-align:center;
+    font-size: clamp(16px, 3.5vw, 36px);
+    justify-items:center;
+    align-items:center;
+
+
+}
+
+.calendar-grid div{
+    width:clamp(20px, 5vw, 50px);
+    height:clamp(20px, 5vw, 50px);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.day{
+    font-weight: bold;
+    opacity: 0.7;
+    font-size: clamp(12px, 2.5vw, 18px);
+}
+
+.selected{
+    width:50px;
+    height:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border:2px solid white;
+    border-radius:50%;
+}
+
+.month{
+    margin-bottom: 0;
+  font-family:Italianno;
+  font-size: clamp(70px, 12vw, 200px);
+}
+
+.year{
+    margin: 0;
+    font-family:Italianno;
+  font-size: clamp(55px, 9vw, 150px);
+
+
+}
+
+.location-btn{
+    font-size: 30px;
+    right:30%;
+    color:black;
+}
+    
+
+
+
+.schedule{
+    width:100%;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:50px;
+
+    flex-wrap:wrap;
+}
+
+.event-card{
+    width: min(280px, 85vw);
+    padding: clamp(16px, 3vw, 28px);
+
+    text-align: center;
+    border-radius: 25px;
+
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(20px);
+
+    color: white;
+}
+
+.event-card h2{
+    font-size:25px;
+    font-family:'Italianno', cursive;
+    margin-bottom:20px;
+}
+
+.time{
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+.place{
+    font-size:20px;
+    margin-bottom:25px;
+}
+
+.location-btn{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px 20px;
+
+    text-decoration: none;
+    color: white;
+
+    border: 1px solid white;
+    border-radius: 30px;
+
+    font-size: 16px;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+
+.footer-text{
+
+    font-weight: 100;
+    font-family: Noto Serif Armenian;
+    width: 100%;
+    text-align: center;
+    padding: 30px 10px;
+    font-size: clamp(24px, 4vw, 60px);
+    color: white;
+    white-space: nowrap;
+    opacity: 0.7;
+}
+
+
+
+
